@@ -37,8 +37,27 @@ body{
   bottom: 0%;
   background-color: black;
   color: white;
+  padding: 10px;
 }
   
-div.container{
-  box-shadow: 20px;
+.btn{
+  background-color: darkblue;
+  border: none;
+}
+.btn-info:hover {
+  color: #fff;
+  background-color: lightsteelblue;
+  border: none;
+}
+
+#question{
+  background-color: #942465;
+  border-radius: 12px;
+  box-shadow: 0.7rem 0 0 #942465, -0.7rem 0 0 #942465;
+  font-family: AvenirNextRoundedDemi;
+  font-weight: 400;
+  line-height: 1.8;
+  text-transform: none;
+  font-size: 20px;
+  font-weight: bold;
 }
