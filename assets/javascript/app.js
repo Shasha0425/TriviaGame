@@ -2,11 +2,13 @@ $(document).ready(function(){
   
     // event listeners
     $("#remaining-time").hide();
-    $("#start").on('click', trivia.startGame);
+    $("#start").on('click', trivia.startGame,);
     $(document).on('click' , '.option', trivia.guessChecker);
+
     
   })
-  
+  var audio = new Audio('./assets/images/The_Office_Theme_Song.mp3')
+
   var trivia = {
     // trivia properties
     correct: 0,
@@ -27,7 +29,7 @@ $(document).ready(function(){
     },
     options: {
       q1: ['Chris Rock', 'Richard Pryor', 'Robin Williams', 'Jamie Foxx'],
-      q2: ['Dewight', 'Todd Packer', 'Jim', 'Pam'],
+      q2: ['Dwight', 'Todd Packer', 'Jim', 'Pam'],
       q3: ['Merideth', 'Creed', 'Jim', 'Oscar'],
       q4: ['Dwight', 'Pam', 'Ryan', 'Phyllis and Bob'],
       q5: ['Sacramento','Seattle', 'Scranton', 'San Antonio'],
@@ -38,8 +40,8 @@ $(document).ready(function(){
       q2: 'Todd Packer',
       q3: 'Oscar',
       q4: 'Dwight',
-      q5: 'Scraton',
-      q6:  'Dunder-Mifflin',
+      q5: 'Scranton',
+      q6: 'Dunder-Mifflin',
     },
     // trivia methods
     // method to initialize game
@@ -67,6 +69,8 @@ $(document).ready(function(){
       
       // ask first question
       trivia.nextQuestion();
+
+      audio.play()
       
     },
     // method to loop through and display questions and options 
