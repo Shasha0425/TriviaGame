@@ -18,31 +18,28 @@ $(document).ready(function(){
     timerId : '',
     // questions options and answers data
     questions: {
-      q1: 'In S1E2 "Diversity Day": What famous comedians stand up routine does Michael imitate?',
-      q2: 'In S2E14 "The Carpet": Who is responsible for Michaels foul smelling carpet?',
-      q3: 'In S2E20 "Drug Testing": Who, in Dwights mind, is a potential drug mule?',
-      q4: 
-      q5: 
-      q6: 
-      q7: 
+      q1: 'What famous comedians stand up routine does Michael imitate that leads to Diversity Day?',
+      q2: 'Who is responsible for Michaels foul smelling carpet in Season 2?',
+      q3: 'Who, in Dwights mind, is a potential drug mule?',
+      q4: 'Who ends up with the Video iPod at the end of the Christmas Party episode?',
+      q5: 'Where does The Office take Place?',
+      q6: 'What is the name of the paper company where "The Office" takes place?',
     },
     options: {
       q1: ['Chris Rock', 'Richard Pryor', 'Robin Williams', 'Jamie Foxx'],
       q2: ['Dewight', 'Todd Packer', 'Jim', 'Pam'],
       q3: ['Merideth', 'Creed', 'Jim', 'Oscar'],
-      q4: 
-      q5: 
-      q6: 
-      q7: 
+      q4: ['Dwight', 'Pam', 'Ryan', 'Phyllis and Bob'],
+      q5: ['Sacramento','Seattle', 'Scranton', 'San Antonio'],
+      q6: ['Mufflin-Muffin','Dunder Muflin', 'Dunder-Mifflin', 'Goldfine & Bowles'], 
     },
     answers: {
       q1: 'Chris Rock',
       q2: 'Todd Packer',
-      q3: 'Merideth',
-      q4: '',
-      q5: 
-      q6:
-      q7: 
+      q3: 'Oscar',
+      q4: 'Dwight',
+      q5: 'Scraton',
+      q6:  'Dunder-Mifflin',
     },
     // trivia methods
     // method to initialize game
